@@ -164,6 +164,14 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>vendor.nxp.hardware.nfc</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>INqNfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>vendor.qti.data.factory</name>
     <version>2.0-2</version>
     <interface>
