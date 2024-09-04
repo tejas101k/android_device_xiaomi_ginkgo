@@ -37,7 +37,8 @@ int main() {
     LOG(INFO) << "Xiaomi Power HAL AIDL Service with Extension is starting.";
 
     // Parse config but do not start the looper
-    std::shared_ptr<HintManager> hm = HintManager::GetFromJSON(kPowerHalConfigPath, false);
+    HintManager* rawHm = HintManager::GetFromJSON(kPowerHalConfigPath, false);
+    std::shared_ptr<HintManager> hm(rawHm, [](HintManager* p) { delete p; });
     if (!hm) {
         LOG(FATAL) << "Invalid config: " << kPowerHalConfigPath;
     }
