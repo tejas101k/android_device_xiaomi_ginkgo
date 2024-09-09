@@ -91,6 +91,9 @@ on post-fs-data
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
 on boot
+    # Power supply
+    chown system system /sys/class/power_supply/battery/input_suspend
+
     chown system system /sys/kernel/hbtp/display_pwr
     start rmt_storage
     start rfs_access
