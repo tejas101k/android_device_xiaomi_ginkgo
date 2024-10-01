@@ -44,4 +44,7 @@
 
     <!-- Statusbar Burn-in protection -->
     <bool name="config_enableBurnInProtection">false</bool>
+
+    <!-- Smart 5G -->
+    <bool name="config_supportSmart5G">false</bool>
 </resources>
