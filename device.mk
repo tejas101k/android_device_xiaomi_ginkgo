@@ -137,6 +137,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    libcrypto-v33 \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.3.vendor
 
