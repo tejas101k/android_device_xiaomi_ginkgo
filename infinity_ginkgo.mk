@@ -31,7 +31,6 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 INFINITY_MAINTAINER := tejas101k
-TARGET_BUILD_VIMUSIC := true
 
 # Device identifier
 PRODUCT_NAME := infinity_ginkgo
